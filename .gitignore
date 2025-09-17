@@ -1,3 +1,6 @@
+# MATLAB Project files
+*.prj
+
 # Autosave files
 *.asv
 *.m~
