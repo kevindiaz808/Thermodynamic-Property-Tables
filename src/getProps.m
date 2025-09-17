@@ -4,7 +4,8 @@ function prop = getProps(desired_value, desired_table, varargin)
     % For 2-parameter tables (superheated): getProps('h', 'A6', 'P', 10, 'T', 500)
 
     % Add package path to access tables
-    tables_path = fullfile(fileparts(mfilename('fullpath')), 'tables');
+    p = fileparts(mfilename('fullpath'));
+    tables_path = fullfile(p(1:end-3), 'tables');
     
     % Check if table exists
     table_file = fullfile(tables_path, sprintf('Table%s.txt', desired_table));

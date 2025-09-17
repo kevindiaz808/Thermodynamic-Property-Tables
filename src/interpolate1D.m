@@ -1,10 +1,12 @@
 % --- Helper function for 1-D linear interpolation ---
 function y = interpolate1D(x_data, y_data, x_query)
+
     % Finds y_query for x_query using linear interpolation on x_data, y_data.
     if x_query < min(x_data) || x_query > max(x_data)
         error('Error: Query value %g is out of data range [%g, %g].',...
               x_query, min(x_data), max(x_data));
     end
+    
     % Find indices for interpolation
     lower_idx = find(x_data <= x_query, 1, 'last');
     upper_idx = find(x_data >= x_query, 1, 'first');

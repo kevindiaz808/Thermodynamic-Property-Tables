@@ -12,6 +12,7 @@ function prop = interpolate2D(T, x_type, x_query, y_type, y_query, desired_value
     all_x = unique(T.(x_type), 'stable');
     
     % Check if the desired x value is exactly in the table
+    any(all_x == x_query)
     if any(all_x == x_query)
         % Exact x value found: simple 1-D interpolation on y
         exact_x_table = T(T.(x_type) == x_query, :);
