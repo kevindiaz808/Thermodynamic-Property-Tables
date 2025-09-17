@@ -1,6 +1,6 @@
 function uninstall()
     % Uninstallation Script
-    fprintf('Uninstalling Thermodyanic Property Tables package...\n');
+    fprintf('Uninstalling Thermodyanic-Property-Tables package...\n');
     
     % Get current package location
     package_path = fileparts(mfilename('fullpath'));
@@ -12,5 +12,5 @@ function uninstall()
     % Save path for future sessions
     savepath();
     
-    fprintf('Thermodyanic Property Tables successfully uninstalled!\n');
+    fprintf('Thermodyanic-Property-Tables successfully uninstalled!\n');
 end
