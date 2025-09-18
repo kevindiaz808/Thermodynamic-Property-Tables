@@ -30,3 +30,15 @@ resources
 **/.svn/**/*
 **/.buildtool/**/*
 **/*.asv
+
+# Exclude Git metadata from the toolbox package
+.git/
+.gitignore
+.gitattributes
+
+# Exclude MATLAB Project files
+*.prj
+resources/
+
+# Exclude any other development-only files
+toolbox.ignore
